@@ -20,5 +20,15 @@ namespace Promillerechner
         private void button1_Click(object sender, EventArgs e)
         {
         }
+
+        private void btn_berechnen_Click(object sender, EventArgs e)
+        {
+            string geschlecht;
+            if (rbtn_maennlich.Checked == true)
+                geschlecht = "m";
+            else
+                geschlecht = "w";
+            Berechnen(nud_gewicht.Value, nud_alkoholanteil.Value, tbx_menge.Text, geschlecht);
+        }
     }
 }

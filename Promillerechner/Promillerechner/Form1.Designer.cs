@@ -32,14 +32,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tbx_menge = new System.Windows.Forms.TextBox();
-            this.nud_groesse = new System.Windows.Forms.NumericUpDown();
+            this.nud_gewicht = new System.Windows.Forms.NumericUpDown();
             this.nud_alkoholanteil = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.rbtn_maennlich = new System.Windows.Forms.RadioButton();
             this.rbtn_weiblich = new System.Windows.Forms.RadioButton();
             this.tbx_ergebnis = new System.Windows.Forms.TextBox();
             this.btn_berechnen = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_groesse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_gewicht)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_alkoholanteil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,9 +66,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Größe";
+            this.label5.Text = "Gewicht in kg";
             // 
             // tbx_menge
             // 
@@ -77,12 +77,12 @@
             this.tbx_menge.Size = new System.Drawing.Size(100, 20);
             this.tbx_menge.TabIndex = 6;
             // 
-            // nud_groesse
+            // nud_gewicht
             // 
-            this.nud_groesse.Location = new System.Drawing.Point(122, 9);
-            this.nud_groesse.Name = "nud_groesse";
-            this.nud_groesse.Size = new System.Drawing.Size(100, 20);
-            this.nud_groesse.TabIndex = 7;
+            this.nud_gewicht.Location = new System.Drawing.Point(122, 9);
+            this.nud_gewicht.Name = "nud_gewicht";
+            this.nud_gewicht.Size = new System.Drawing.Size(100, 20);
+            this.nud_gewicht.TabIndex = 7;
             // 
             // nud_alkoholanteil
             // 
@@ -114,6 +114,7 @@
             // rbtn_weiblich
             // 
             this.rbtn_weiblich.AutoSize = true;
+            this.rbtn_weiblich.Checked = true;
             this.rbtn_weiblich.Location = new System.Drawing.Point(122, 131);
             this.rbtn_weiblich.Name = "rbtn_weiblich";
             this.rbtn_weiblich.Size = new System.Drawing.Size(66, 17);
@@ -137,6 +138,7 @@
             this.btn_berechnen.TabIndex = 14;
             this.btn_berechnen.Text = "Berechnen";
             this.btn_berechnen.UseVisualStyleBackColor = true;
+            this.btn_berechnen.Click += new System.EventHandler(this.btn_berechnen_Click);
             // 
             // Form1
             // 
@@ -149,14 +151,14 @@
             this.Controls.Add(this.rbtn_maennlich);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nud_alkoholanteil);
-            this.Controls.Add(this.nud_groesse);
+            this.Controls.Add(this.nud_gewicht);
             this.Controls.Add(this.tbx_menge);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "Form1";
             this.Text = "frm_promillerechner";
-            ((System.ComponentModel.ISupportInitialize)(this.nud_groesse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_gewicht)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_alkoholanteil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -169,7 +171,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbx_menge;
-        private System.Windows.Forms.NumericUpDown nud_groesse;
+        private System.Windows.Forms.NumericUpDown nud_gewicht;
         private System.Windows.Forms.NumericUpDown nud_alkoholanteil;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton rbtn_maennlich;
